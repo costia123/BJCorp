@@ -1,0 +1,75 @@
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: var(--chakra-colors-primaryBg);
+   
+}
+.afterHeader{
+display: flex;
+}
+.Core{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    background-image: url('../../static/img/bg1.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    min-height: 800px;
+}
+.Chat{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    width: 500px;
+    background: var(--chakra-colors-secondaryBg);
+    height: 500px;
+    border-radius: 5px;
+    border: 1px solid var(--chakra-colors-light);
+    justify-content: space-between;
+    padding: 15px;
+}
+.sendFrom{
+    display: flex;
+}
+.messageBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    justify-content: space-around;
+}
+.input{
+    background: transparent;
+    border: 2px solid var(--chakra-colors-light);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+}
+.btn{
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 10%;
+    cursor: pointer;
+}
+.logoSend{
+    width: 20px;
+}
+@media only screen and (max-width: 660px) {
+    .Chat{
+        width: 90% !important;
+    }
+}

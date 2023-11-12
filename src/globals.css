@@ -24,9 +24,10 @@ input:focus {
 	--primary-scale-200: rgba(141, 199, 253, 1);
 	--primary-scale-100: rgba(190, 222, 252, 1);
 	--primary-scale-50: rgba(228, 242, 255, 1);
-
-	--branding-main: rgba(12, 113, 207, 1);
-	--branding-main-dark: rgba(27, 80, 129, 1);
+	--Shadow : 0px 0px 50px 1px rgba(0,191,100,0.59);
+	--branding-main: rgba(0,191,100);
+	--branding-dark: rgb(0, 0, 0);
+	--branding-main-dark: rgb(24, 24, 24);
 	--branding-error: rgba(207, 12, 82, 1);
 	--branding-tertiary: rgba(207, 12, 129, 1);
 	--branding-warning: rgba(207, 129, 12, 1);
@@ -101,7 +102,6 @@ h2,
 input,
 h1 {
 	font-family: var(--main-font);
-	color: var(--gray-scale-800);
 }
 
 p {

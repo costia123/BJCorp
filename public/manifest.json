@@ -1,6 +1,6 @@
 {
-	"short_name": "Change the name",
-	"name": "Change",
+	"short_name": "RIS",
+	"name": "Rocks In Socks",
 	"icons": [
 		{
 			"src": "favicon.ico",
@@ -8,12 +8,12 @@
 			"type": "image/x-icon"
 		},
 		{
-			"src": "logo192.png",
+			"src": "tabIcon.png",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "logo512.png",
+			"src": "tabIcon.png",
 			"type": "image/png",
 			"sizes": "512x512"
 		}

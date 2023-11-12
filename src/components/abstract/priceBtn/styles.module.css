@@ -1,0 +1,11 @@
+.button{
+    border: none;
+    border-radius: 25px;
+    width: 200px;
+    height: 40px;
+    background-color: var(--chakra-colors-light);
+    box-shadow: 0px 0px 15px 2px #12192b;
+    color: white;
+    font-weight: 800;
+
+}

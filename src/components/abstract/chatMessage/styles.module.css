@@ -1,0 +1,13 @@
+.ChatMessage{
+    display: flex;
+    flex-direction: column;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.autre{
+    color: orange;
+}

@@ -1,0 +1,21 @@
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: var(--branding-main-dark);
+}
+.afterHeader{
+display: flex;
+}
+.Core{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    background-image: url('../../static/img/bg1.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}

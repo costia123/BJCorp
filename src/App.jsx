@@ -1,13 +1,20 @@
 import React from "react";
-import { Switch, BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "screens/Home";
+import Price from "screens/price";
+import Login from 'screens/Login'
+import Chat from "screens/chat";
 
 function App() {
+
   return (
     <>
       <Router>
 		<Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/login" element={<Login />}/>
+          <Route path="/logged" element={<Chat />}/>
+          <Route path="/price/:type" element={<Price/>}/>
 		</Routes>
       </Router>
     </>

@@ -1,0 +1,11 @@
+.button{
+    border: none;
+    background: transparent;
+    font-size: var(--font-size-20px);
+    color: #a5a5a5;
+    cursor: pointer;
+    margin-right: 25px;
+}
+.button:hover{
+    color: white
+}

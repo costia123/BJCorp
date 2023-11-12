@@ -1,0 +1,43 @@
+.mainBox {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.topFlex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.CardFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+@media only screen and (max-width: 660px) {
+    .CardFlex{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 45px;
+        flex-wrap: nowrap;
+    }
+    p{
+        text-align: center;
+    }
+  }
+  
