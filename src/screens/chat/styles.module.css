@@ -1,7 +1,7 @@
 .background{
     width: 100%;
     height: 100%;
-    background-color: var(--chakra-colors-primaryBg);
+    background-color: var(--branding-dark);
    
 }
 .afterHeader{
@@ -15,7 +15,6 @@ display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    background-image: url('../../static/img/bg1.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;

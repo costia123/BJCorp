@@ -18,7 +18,7 @@ function Footer() {
       <div className={styles.mainBox}>
         <div className={styles.logobox}>
             <img src={logoP} className={styles.logo} />
-          <h3>Cor<span onClick={() => {beSure()}} className={styles.aSecret}>p</span></h3>
+          {/* <h3>Cor<span onClick={() => {beSure()}} className={styles.aSecret}>p</span></h3> */}
         </div>
         <div>
           <a href="https://github.com/costia123" className={styles.Href}>

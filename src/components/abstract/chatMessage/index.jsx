@@ -7,7 +7,7 @@ function ChatMessage (props){
         <>
             <div className={styles.ChatMessage}> 
                 <span className={role === "superAdmin" ? styles.red : role === "Admin" ? styles.green : styles.autre} >{username}</span>
-                <p>{message}</p>
+                <p className={styles.txt}>{message}</p>
             </div>
         </>
     )

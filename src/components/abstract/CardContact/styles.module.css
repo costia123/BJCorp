@@ -6,7 +6,7 @@
     flex-wrap: nowrap;
     align-content: center;
     justify-content: space-around;
-    background-color: var(--branding-dark);
+    background-color: var(--branding-main-dark);
     width: 350px;
     height: 150px;
     padding: 10px;
@@ -68,7 +68,7 @@
       flex-wrap: nowrap;
       align-content: center;
       justify-content: space-around;
-      background-color: var(--chakra-colors-tertiaryBg);
+      background-color: var(--branding-main-dark);
       width: 350px;
       height: 150px;
       padding: 10px;

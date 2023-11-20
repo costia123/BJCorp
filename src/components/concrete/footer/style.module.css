@@ -1,7 +1,7 @@
 .mainBox {
   width: 100%;
   height: 80px;
-  background-color: var(--branding-dark);
+  background-color: var(--branding-main-dark);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -44,7 +44,7 @@
   .mainBox {
     width: 100%;
     height: 180px;
-    background-color: var(--chakra-colors-secondaryBg);
+    background-color: var(--branding-main-dark);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

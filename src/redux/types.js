@@ -1,5 +1,5 @@
 export const strapi = {
-	GET_DIAMOND: "get_diamond",
+	GET_SERVICES: "get_services",
 	GET_RUBY: "get_ruby",
 	GET_SAPHIR: "get_saphir",
 	GET_EMERALD: "get_emerald",
@@ -12,5 +12,6 @@ export const strapi = {
 	GET_CONTACT: "get_contact",
 	SET_NO_LOG_REASON: 'SET_NO_LOG_REASON',
 	LOGIN: "login",
-	LOCAL_STORAGE_LOG: "LOCAL_STORAGE_LOG"
+	LOCAL_STORAGE_LOG: "LOCAL_STORAGE_LOG",
+	GET_PARTNER: "GET_PARTNER"
 }

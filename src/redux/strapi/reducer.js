@@ -1,7 +1,7 @@
 import { strapi } from "redux/types";
 
 const initialState = {
-  diamondTable: null,
+  services: null,
   diamondLastPrice: null,
   diamondPourcent: null,
   emeraldTable: null,
@@ -23,25 +23,20 @@ const initialState = {
   logMessage: null,
   username: null,
   role: null,
-  token: null
+  token: null,
+  partner: null
 };
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case strapi.GET_DIAMOND:
+    case strapi.GET_SERVICES:
       return {
         ...state,
-        diamondTable: action.payload.table,
-        diamondLastPrice: action.payload.LastPrice,
-        diamondPourcent: action.payload.pourcent,
-        diamondDate: action.payload.date,
+        services: action.payload,
       };
-    case strapi.GET_EMERALD:
+    case strapi.GET_PARTNER:
       return {
         ...state,
-        emeraldTable: action.payload.table,
-        emeraldLastPrice: action.payload.LastPrice,
-        emeraldPourcent: action.payload.pourcent,
-        emeraldDate: action.payload.date,
+        partner: action.payload
       };
     case strapi.GET_SAPHIR:
       return {

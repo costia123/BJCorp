@@ -4,8 +4,11 @@
     width: 200px;
     height: 40px;
     background-color: var(--chakra-colors-light);
-    box-shadow: 0px 0px 15px 2px #12192b;
+    border: 1px solid var(--branding-main);
     color: white;
     font-weight: 800;
 
+}
+.button:hover{
+    box-shadow: 0px 0px 15px 2px var(--branding-main);
 }

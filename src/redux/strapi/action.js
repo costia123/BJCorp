@@ -11,139 +11,31 @@ export const setloading = (value) => dispatch => {
       payload: value
   })
 }
-export const getDiamond = () => dispatch => {
+export const getServices = () => dispatch => {
   dispatch(setloading(true))
-    axios.get(`${api_link}diamants?_sort=date:DESC`).then((res) => {
-        console.log(res)
-        
-        dispatch(setDiamond(res.data.data))
-    })
-}
-
-export const setDiamond = (res) => dispatch => {
-    console.log('first', res)
-    const priceTable = [];
-    const date = []
-    res.map((itm, index) => {
-        priceTable.push(parseInt(itm.attributes.price))
-       date.push(new Date (itm.attributes.date))
-      })
-      if(priceTable.length === res.length ){
-        console.log(priceTable)
-        const LastPrice =  priceTable[priceTable.length -1]
-        const sliced = priceTable.slice(-7)
-        console.log("eee", sliced)
-        const pourcent = Math.round((LastPrice - sliced[0]) / priceTable[0] * 100 * 100) / 100;
-        const data = {table : priceTable, LastPrice: LastPrice, pourcent: pourcent, date: date }
-        dispatch({
-          type: strapi.GET_DIAMOND,
-          payload: data
-        })
-        dispatch(setloading(false))
-      }else{
-        console.log("bug")
-      }
-}
-export const getEmerald = () => dispatch => {
-  axios.get(`${api_link}emeraudes`).then((res) => {
-      console.log(res)
-      dispatch(setEmerald(res.data.data))
-  })
-}
-
-export const setEmerald = (res) => dispatch => {
-  console.log('first', res)
-  const priceTable = [];
-  const date = []
-  res.map((itm, index) => {
-      priceTable.push(parseInt(itm.attributes.price))
-     date.push(new Date (itm.attributes.date))
-    })
-    if(priceTable.length === res.length ){
-      console.log(priceTable)
-      const LastPrice =  priceTable[priceTable.length -1]
-      const sliced = priceTable.slice(-7)
-      const pourcent = Math.round((LastPrice - sliced[0]) / priceTable[0] * 100 * 100) / 100;
-      const data = {table : priceTable, LastPrice: LastPrice, pourcent: pourcent, date: date }
-      dispatch({
-        type: strapi.GET_EMERALD,
-        payload: data
-      })
-    }else{
-      console.log("bug")
-    }
-}
-export const getSaphir = () => dispatch => {
-  axios.get(`${api_link}saphirs`).then((res) => {
-      console.log(res)
-      dispatch(setSaphir(res.data.data))
-  })
-}
-
-export const setSaphir = (res) => dispatch => {
-  console.log('first', res)
-  const priceTable = [];
-  const date = []
-  res.map((itm, index) => {
-      priceTable.push(parseInt(itm.attributes.price))
-     date.push(new Date (itm.attributes.date))
-    })
-    if(priceTable.length === res.length ){
-      console.log(priceTable)
-      const LastPrice =  priceTable[priceTable.length -1]
-      const sliced = priceTable.slice(-7)
-      const pourcent = Math.round((LastPrice - sliced[0]) / priceTable[0] * 100 * 100) / 100;
-      const data = {table : priceTable, LastPrice: LastPrice, pourcent: pourcent, date: date }
-      dispatch({
-        type: strapi.GET_SAPHIR,
-        payload: data
-      })
-    }else{
-      console.log("bug")
-    }
-}
-export const getRuby = () => dispatch => {
-  axios.get(`${api_link}rubies`).then((res) => {
-      console.log(res)
-      dispatch(setRuby(res.data.data))
-  })
-}
-
-export const setRuby = (res) => dispatch => {
-  console.log('first', res)
-  const priceTable = [];
-  const date = []
-  res.map((itm, index) => {
-      priceTable.push(parseInt(itm.attributes.price))
-      date.push(new Date (itm.attributes.date))
-    })
-    if(priceTable.length === res.length ){
-      console.log(priceTable)
-      const LastPrice =  priceTable[priceTable.length -1]
-      const sliced = priceTable.slice(-7)
-      const pourcent = Math.round((LastPrice - sliced[0]) / priceTable[0] * 100 * 100) / 100;
-      const data = {table : priceTable, LastPrice: LastPrice, pourcent: pourcent, date: date }
-      dispatch({
-        type: strapi.GET_RUBY,
-        payload: data
-      })
-    }else{
-      console.log("bug")
-    }
-}
-
-export const getRocks = () => dispatch => {
-  dispatch(setloading(true))
-  axios.get(`${api_link}rocks`).then((res) => {
+  axios.get(`${api_link2}services?populate=*`).then((res) => {
       console.log(res)
       
       dispatch({
-        type: strapi.GET_ROCKS,
+        type: strapi.GET_SERVICES,
         payload: res.data.data
       })
     })
     dispatch(setloading(false))
 }
+export const getPartner = () => dispatch => {
+  dispatch(setloading(true))
+  axios.get(`${api_link2}partenaires?populate=*`).then((res) => {
+      console.log(res)
+      
+      dispatch({
+        type: strapi.GET_PARTNER,
+        payload: res.data.data
+      })
+    })
+    dispatch(setloading(false))
+}
+
 export const getContact = () => dispatch => {
   dispatch(setloading(true))
   axios.get(`${api_link2}contacts?populate=*`).then((res) => {

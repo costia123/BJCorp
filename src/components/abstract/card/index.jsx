@@ -6,8 +6,8 @@ function Card(props) {
   return (
     <>
       <div className={styles.mainbox}>
-        <img src={img} className={styles.img} />
-        <h4>{Title}</h4>
+        <img src={`https://adminbj.costiadevelopmentagency.fr${img}`} className={styles.img} />
+        <h4 className={styles.Title}>{Title}</h4>
         <p className={styles.Text}>{Text}</p>
         {btnTxt ? <PriceBtn Text={btnTxt} /> : null}
       </div>
